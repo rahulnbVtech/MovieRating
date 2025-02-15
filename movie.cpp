@@ -21,7 +21,7 @@ Movie::Movie(std::string t, std::string d, int r, int i, double rate) {
 		throw std::invalid_argument("invalid");
 	}
 
-	if (rating >= 0 && rating <= 10) {
+	if (rate >= 0 && rate <= 10) {
 		rating = rate;
 	}
 	else {
