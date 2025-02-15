@@ -8,7 +8,7 @@
 #include "movie.h"
 
 
-std::vector<Movie*> CreateMovies(std::vector<std::string> title, std::vector<std::string> director, std::vector<int> runtime, std::vector<int> id, std::vector<double> rating);
+std::vector<Movie*> CreateMovies(std::vector<std::string> title, std::vector<std::string> director, std::vector<int> runtime, std::vector<int> id, std::vector<double> rating); // method to create movies
 
 
 #endif

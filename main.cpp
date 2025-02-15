@@ -26,14 +26,18 @@ int CalculateAverageRuntime(std::vector<Movie*> movies) {
     return sum / movies.size();
 }
 
+
+// main method where all the analysis is performed
 int main() {
     std::vector<std::string> titles{ "Movie 1", "Movie 2", "Movie 3", "Movie 4", "Movie 5" };
     std::vector<std::string> directors{ "Director 1", "Director 2", "Director 3", "Director 4", "Director 5" };
     std::vector<int> runtimes{ 140, 175, 150, 160, 140 };
     std::vector<int> ids{ 1, 2, 3, 4, 5 };
     std::vector<double> ratings{ 9.1, 9.2, 9.0, 8.8, 8.9 };
-    std::vector<Movie*> movies = CreateMovies(titles, directors, runtimes, ids, ratings);
 
+
+
+    std::vector<Movie*> movies = CreateMovies(titles, directors, runtimes, ids, ratings);
     Movie* highest_rated = FindHighestRatedMovie(movies);
     int average_runtime = CalculateAverageRuntime(movies);
 

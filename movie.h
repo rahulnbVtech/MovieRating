@@ -19,9 +19,11 @@ private:
 
 public:
 
-	Movie(std::string t, std::string d, int r, int i, double rate);
-	void PrintMovieData();
-	std::string GetTitle();
+	Movie(std::string t, std::string d, int r, int i, double rate); // constructor
+	void PrintMovieData(); // printing data method
+
+
+	std::string GetTitle(); // methods below are all getter methods
 	std::string GetDirector();
 	double GetRating();
 	int GetRuntime();

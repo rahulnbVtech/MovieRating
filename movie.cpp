@@ -9,7 +9,7 @@ int runtime;
 double rating;
 int id;
 
-Movie::Movie(std::string t, std::string d, int r, int i, double rate) {
+Movie::Movie(std::string t, std::string d, int r, int i, double rate) { // this is the constructor for the movie
 	title = t;
 	director = d;
 	id = i;
@@ -29,11 +29,14 @@ Movie::Movie(std::string t, std::string d, int r, int i, double rate) {
 	}
 }
 
-void Movie::PrintMovieData() {
+void Movie::PrintMovieData() { // this is where the movie data gets printed
 	std::cout << "ID: " << id << "Title: " << title << "Director : " 
 		<< director << "Runtime : " << runtime << "Rating: " << rating << std::endl;
 }
 
+
+
+// The five methods below are all the get methods
 std::string Movie::GetTitle()
 {
 	return title;
