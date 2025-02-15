@@ -9,7 +9,7 @@ std::vector<Movie*> CreateMovies(std::vector<std::string> title, std::vector<std
 {
 	std::vector<Movie*> movies;
 
-	for (int i = 0; i < id.size(); i++) { // for loop to push all the movies into the movie vector defined above
+	for (size_t i = 0; i < id.size(); i++) { // for loop to push all the movies into the movie vector defined above
 		movies.push_back(new Movie(title.at(i), director.at(i), runtime.at(i), id.at(i), rating.at(i)));
 	}
 
